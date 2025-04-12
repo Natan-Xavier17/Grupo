@@ -1,0 +1,16 @@
+Algoritmo: makeRange(int lower, int upper)
+range(novo vetor de tamanho) <-- upper - lower + 1.
+para i de 0 até range.length - 1
+faça
+range[i] <-- lower
+retorna range
+
+
+Algoritmo principal:
+range <-- vetor inteiro
+lister <-- novo RangeLister
+range <-- lister.makeRange(1, 10)
+imprime "The array: [ "
+para i de 0 até range.length - 1
+imprime range[i] + " "
+imprimir "]"

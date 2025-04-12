@@ -1,0 +1,19 @@
+O algoritmo RangerLister tem como propósito gerar uma lista de números inteiros consecutivos, começando em um valor
+inicial (lower) e terminando em um valor final (upper).
+
+Para isso, a classe RangeLister recebe esses dois números inteiros como parâmetros. A função makeRanger dentro dessa
+classe calcula o tamanho necessário para a lista usando a diferença entre upper e lower, somando 1. Em seguida, ela
+percorre esse intervalo com um loop for, adicionando um elemento por vez à lista. O valor adicionado em cada passo é o
+valor atual de lower, que é incrementado a cada iteração até alcançar o valor de upper.
+
+No método main, uma lista vazia chamada range é criada. Uma instância da classe RangerLister é então utilizada para
+preencher essa lista range com os números dentro do intervalo definido por lower e upper. Finalmente, o método main
+itera sobre os índices da lista range e imprime cada elemento em uma linha separada.
+
+Esse algoritmo utiliza a lógica de Arranjo onde, o algoritmo makeRanger define o tamanho do Arranjo com base no
+intervalo dado. Ele aloca um bloco contíguo de memória para esse tamanho. Em seguida, preenche cada posição do
+Arranjo sequencialmente com os números do intervalo, começando pelo limite inferior e incrementando até o limite
+superior. O acesso aos elementos é feito diretamente pelo índice. Essa organização sequencial com tamanho fixo e acesso
+direto é a lógica fundamental de um Arranjo sendo utilizada.
+
+

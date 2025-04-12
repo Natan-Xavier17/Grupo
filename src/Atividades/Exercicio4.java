@@ -1,3 +1,5 @@
+package Atividades;
+
 import javax.swing.*;
 
 public class Exercicio4 {
