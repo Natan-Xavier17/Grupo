@@ -1,0 +1,17 @@
+Declarar uma Array onde os elementos serão números inteiros
+Declarar outra Array como uma array de números de ponto flutuante com o mesmo tamanho da primeira Array
+
+Printar "Array: [ "
+Para cada índice i de 0 até o tamanho de Array - 1
+    Printar o elemento Array[i] seguido de um espaço
+Fim Para
+Printar "]"
+
+Printar "Array2: [ "
+Crie a variavel count = 0
+  Enquanto count < tamanho de Array E Array[count] != 1
+     Converta Array[count] para ponto flutuante e armazene em Array2[count]
+     Printar o valor de Array[count] seguido de um espaço
+     Incrementar count em 1
+Fim Enquanto
+Printar "]"
