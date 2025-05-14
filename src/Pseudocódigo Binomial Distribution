@@ -1,0 +1,54 @@
+ALGORITMO Binomial Distribution
+
+ENTRADA: 
+	p: Probabilidade de sucesso do primeiro experimento (float).
+	p2: Probabilidade de sucesso do segundo experimento (float). 
+	m: Número de experimentos a realizar (int). 
+
+
+CONSTANTES:
+ 	 COIN_TOSSES = 100
+	 LINES_IN_DIAGRAM = 30 
+
+
+FUNÇÃO experimento_binomial(n, prob):
+ // Simula n lançamentos de moeda com probabilidade prob de sucesso. 
+	resultado = 0 
+	PARA CADA i DE 1 ATÉ n FAÇA: 
+	   SE aleatório() < prob  ENTÃO 
+resultado = resultado + 1 
+FIM SE 
+FIM PARA
+RETORNAR resultado 
+
+INÍCIO: 
+SE número de argumentos de entrada < 3  ENTÃO 
+ENCERRAR
+FIM SE 
+
+ler p, p2, m dos argumentos de entrada.
+
+// Primeira leva  de conjunto de experimentos 
+dist1 = novo BinomialDistribution(COIN_TOSSES, p)
+dados1 =  nova ListaDeDados()
+PARA CADA i DE 1 ATÉ m FAÇA:
+inserir(dados1, dist1) 
+FIM PARA 
+
+// Segundo leva de conjunto de experimentos 
+dist2 = novo  BinomialDistribution(COIN_TOSSES, p2) 
+dados2 = nova ListaDeDados() 
+PARA i DE 1 ATÉ m FAÇA: 
+ inserir(dados2, dist2)
+FIM PARA 
+
+// Combinar os resultados 
+dados_combinados = adicionar(dados1, dados2)
+
+// Imprimir resultados 
+imprimir(dados_combinados)
+ imprimirDiagrama(dados_combinados, LINES_IN_DIAGRAM, COIN_TOSSES)
+
+FIM DA FUNÇÃO
+
+
